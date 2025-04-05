@@ -14,6 +14,9 @@ body {
   border-bottom: solid black 1px;
   padding: 10px;
   gap: 10px;
+  position: sticky;
+  top:0;
+  background-color: white;
 }
 
 .nav__bar__s1__title {
@@ -34,6 +37,7 @@ body {
   border: none;
   width: 100%;
   font-size: 15px;
+  background-color: transparent;
 }
 
 .nav__bar__s2 input:focus {
@@ -45,7 +49,26 @@ body {
   align-items: center;
   gap: 30px;
 }
-
+.mylearning{
+  position:relative;
+  cursor: pointer;
+}
+.mylearning__popup{
+  position:absolute;
+  background-color: white;
+  color: black;
+  border:solid 1px #a332ea;
+  border-radius: 30px;
+  width: 190px;
+  top:100%;
+  right: 0;
+  display: none;
+  padding:10px;
+  }
+  .mylearning:hover .mylearning__popup{
+    display:block;
+    
+  }
 .categories {
   display: flex;
   padding: 10px;
@@ -54,16 +77,39 @@ body {
 }
 
 .categories p {
-  background-color: #a332ea;
+  background-color:#aa33f4;
   padding: 12px;
   color: white;
   border-radius: 30px;
 }
 .categories p:hover {
-background-color:#a155d0 ;
+background-color:#a332ea ;
+color: black;
+font-weight:bold ;
+}
+.sale{
+  position:relative;
+  
 }
 .sale-img img {
   width: 100%;
+}
+.sales_title{
+  width: fit-content;
+  border:1px black solid;
+  height: 40px;
+  position:absolute;
+  top:30%;
+  left:5%;
+  padding: 10px;
+  font-weight: bold;
+  
+}
+
+.sales_title:hover{
+  border:2px solid #a332ea;
+  text-decoration: wavy;
+  
 }
 
 .recommended {
@@ -88,6 +134,10 @@ background-color:#a155d0 ;
   gap: 10px;
   padding: 10px;
 
+}
+.course__card:hover{
+  background-color: white;
+  border:#a332ea solid 3px;
 }
 
 .course__card__img {
