@@ -15,7 +15,7 @@ body {
   padding: 10px;
   gap: 10px;
   position: sticky;
-  top:0;
+  top: 0;
   background-color: white;
 }
 
@@ -49,67 +49,93 @@ body {
   align-items: center;
   gap: 30px;
 }
-.mylearning{
-  position:relative;
+
+.mylearning {
+  position: relative;
   cursor: pointer;
 }
-.mylearning__popup{
-  position:absolute;
+
+.mylearning__popup {
+  position: absolute;
   background-color: white;
   color: black;
-  border:solid 1px #a332ea;
+  border: solid 1px #a332ea;
   border-radius: 30px;
   width: 190px;
-  top:100%;
+  top: 100%;
   right: 0;
   display: none;
-  padding:10px;
-  }
-  .mylearning:hover .mylearning__popup{
-    display:block;
-    
-  }
+  padding: 10px;
+}
+
+.mylearning:hover .mylearning__popup {
+  display: block;
+
+}
+
 .categories {
   display: flex;
   padding: 10px;
   justify-content: space-around;
   border-bottom: solid 1px black;
+ 
 }
 
 .categories p {
-  background-color:#aa33f4;
+  background-color: #aa33f4;
   padding: 12px;
   color: white;
   border-radius: 30px;
-}
-.categories p:hover {
-background-color:#a332ea ;
-color: black;
-font-weight:bold ;
-}
-.sale{
-  position:relative;
-  
-}
-.sale-img img {
-  width: 100%;
-}
-.sales_title{
-  width: fit-content;
-  border:1px black solid;
-  height: 40px;
-  position:absolute;
-  top:30%;
-  left:5%;
-  padding: 10px;
-  font-weight: bold;
+  border: solid 2px #a21bf5;
   
 }
 
-.sales_title:hover{
-  border:2px solid #a332ea;
+.categories p:hover {
+  background-color: #a332ea;
+  color: black;
+  font-weight: bold;
+  transition: 2sS;
+}
+
+.sale {
+  position: relative;
+}
+
+.sale-img img {
+  width: 100%;
+}
+
+.sales__offer {
+  width: fit-content;
+  border: 2px #a332ea solid;
+  height: 80px;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  padding: 20px;
+  font-weight: bold;
+  background-color: rgb(243, 241, 239);
+  animation-name:zoom ;
+  animation-duration: 2s;
+  opacity: 2s;
+  animation-fill-mode: forwards;
+}
+ 
+@keyframes zoom{
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.sales_title:hover {
+  border: 2px solid #a332ea;
   text-decoration: wavy;
-  
+
 }
 
 .recommended {
@@ -124,20 +150,21 @@ font-weight:bold ;
   justify-content: space-between;
   padding: 20px;
   margin-top: 10px;
-  
+
 
 }
 
 .course__card {
   width: 250px;
-  background-color:#9b52c7 ;
+  background-color: #9b52c7;
   gap: 10px;
   padding: 10px;
 
 }
-.course__card:hover{
+
+.course__card:hover {
   background-color: white;
-  border:#a332ea solid 3px;
+  border: #a332ea solid 3px;
 }
 
 .course__card__img {
@@ -165,10 +192,10 @@ font-weight:bold ;
 
 }
 
-.topics__container p:hover{
-  background-color:#a332ea;
+.topics__container p:hover {
+  background-color: #a332ea;
   color: aliceblue;
-  border:solid wheat 3px;
+  border: solid wheat 3px;
 }
 
 .popular__container {
